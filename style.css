@@ -8,7 +8,6 @@
 /* Navbar Section Styles */
 /* ----------------------- */
 nav{
-    border: 2px solid tomato;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -65,11 +64,26 @@ nav li a{
     border: 0;
 }
 
+.banner-image img{
+    padding-top: 25px;
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: 560px;
+    background-position: 35% 70%;
+}
 
+/* Companies Section Styles */
+/* --------------------------- */
 
-
-
-
+.companies-container{
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
 
 
 
@@ -112,6 +126,14 @@ nav li a{
     .banner-image img{
         margin-bottom: 50px;
         width: 300px;
+        background-image: none;
+
+    }
+
+    .companies-container{
+        width: 0px;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -137,6 +159,13 @@ nav li a{
     }
     .banner-content{
         margin-top: 50px;
+    }
+    
+    .companies-container{
+        width: 0px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
     }
 }
 
