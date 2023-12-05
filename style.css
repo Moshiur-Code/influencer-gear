@@ -148,6 +148,31 @@ main{
     border: 0;
 }
 
+.footer-container{
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer{
+
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background: #0A0826;
+    color: white;
+}
+
+.footer-title{
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+footer i{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
 /*
     -------------------------------------
     Responsive Design for Mobile Device
@@ -214,8 +239,12 @@ main{
     .feature-container{
         flex-direction: column-reverse;
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .feature-container img{
+        width: 100%;
     }
 }
 
