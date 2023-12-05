@@ -74,15 +74,49 @@ nav li a{
 
 /* Companies Section Styles */
 /* --------------------------- */
+main{
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 .companies-container{
-    width: 1140px;
-    margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
+}
+
+/* Collection Section Styles */
+.collection-title{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.collection-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.collection-card{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.card-content{
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.checked{
+    color: orange;
 }
 
 
@@ -130,11 +164,28 @@ nav li a{
 
     }
 
+    main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .companies-container{
-        width: 0px;
         flex-direction: column;
         gap: 20px;
     }
+
+    .collection-container{
+        text-align: center;
+    }
+
+    .collection-card-container{
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card img{
+        width: 90%;
+    }
+
 }
 
 
@@ -161,11 +212,27 @@ nav li a{
         margin-top: 50px;
     }
     
-    .companies-container{
-        width: 0px;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
+    main{
+        padding:0px;
     }
+
+    .companies-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collection-container{
+        display: flex;
+        justify-content: center;
+    }
+    .collection-card-container{
+        grid-template-columns: 1fr;
+
+    }
+
+    .collection-card img{
+        width: 90%;
+    }
+
 }
 
